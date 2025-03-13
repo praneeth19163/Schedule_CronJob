@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Schedule</title>
+</head>
+<body>
+    <h2>Welcome, {{ userid }}</h2>
+    <h3>Your Preferred Tech: {{ preferred_tech }}</h3>
+    <h3>Today's Tasks:</h3>
+    <ul>
+        {% for task in tasks %}
+            <li>{{ task['task'] }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/logout">Logout</a>
+</body>
+</html>

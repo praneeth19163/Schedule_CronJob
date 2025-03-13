@@ -1,0 +1,17 @@
+# Edit this file to introduce tasks to be run by cron.
+# Each task to run has to be defined through a single line
+# with the format:
+#  <minute> <hour> <day-of-month> <month> <day-of-week> <command>
+#
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  ------- month (1 - 12)
+# |  |  |  |  ---- day of the week (0 - 6) (Sunday=0, Monday=1, ..., Saturday=6)
+# |  |  |  |  
+# *  *  *  *  * <command to execute>
+#
+# Example: Run a script at 3:30 AM every day
+# 30 3 * * * /path/to/script.sh
+0 0 * * * /usr/bin/python3 /home/praneeth/my_script.py
